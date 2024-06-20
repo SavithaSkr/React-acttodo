@@ -16,18 +16,21 @@ const Login = (props) => {
   };
 
   const checkUser = () => {
-    var userfound = false;
+    navigate("/");
+    navigate("/landing");
+    /*  var userfound = false;
     users.forEach((item) => {
       if (item.userName === eusername && item.password === epassword) {
         console.log("login Success");
         userfound = true;
-        navigate("/landing", { state: { user: eusername } });
+        navigate("/landing");
+        { state: { user: eusername } } 
       }
     });
     if (userfound === false) {
       console.log("login Failed");
       setRuser(false);
-    }
+    } */
   };
   return (
     <>
@@ -48,7 +51,7 @@ const Login = (props) => {
               onChange={handleUInput}
             ></input>
             <input
-              type="text"
+              type="password"
               className="w-52 border-black p-1 bg-transparent border rounded-md"
               placeholder="Password"
               onChange={handlePInput}

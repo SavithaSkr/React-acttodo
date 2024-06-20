@@ -4,15 +4,15 @@ import Card from "../components/Card";
 import TodoContainer from "../components/TodoContainer";
 
 const Landing = () => {
-  console.log("you are in landingpage");
+  console.log("you are in landing page");
   const data = useLocation();
-  console.log(data.store.user);
+  console.log("this is data " + data.user);
   return (
     <>
       <div className="bg-black p-16">
         <div className="bg-[#EFEFEF] p-10 border rounded-md ">
           {/* header */}
-          <Header name={data.store.user} />
+          <Header name={data.user} />
           {/* Cards */}
           <div className="flex justify-between gap-7 my-5 flex-wrap">
             <Card bgcolor={"#8272DA"} title={"23"} subtitle={"USA"} />

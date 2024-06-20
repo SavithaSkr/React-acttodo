@@ -29,13 +29,13 @@ const Signup = (props) => {
 
           <div className="flex flex-col gap-2 my-2">
             <input
-              type="text"
+              type="password"
               className="w-52 border-black p-1 bg-transparent border rounded-md"
               placeholder="UserName"
               onChange={handleUInput}
             ></input>
             <input
-              type="text"
+              type="password"
               className="w-52 border-black p-1 bg-transparent border rounded-md"
               placeholder="Password"
               onChange={handlePInput}
